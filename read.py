@@ -1,11 +1,4 @@
-import requests
 
-api_key = "06991f5a417d4300814113707251901"
-
-url =f"http://api.weatherapi.com/v1/current.json?key={api_key}&q=toronto&aqi=yes"
-resp = requests.get(url)
-daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-data = resp.json() 
 # Sample data
 data = {
     'location': {
